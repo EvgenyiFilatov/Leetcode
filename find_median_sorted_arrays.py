@@ -1,8 +1,12 @@
-"""4. Median of Two Sorted Arrays,
+"""
+4. Median of Two Sorted Arrays,
 https://leetcode.com/problems/median-of-two-sorted-arrays/description/
 """
+
+
 class Solution:
-    def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
+
+    def findMedianSortedArrays(self, nums1: list[int], nums2: list[int]):
         if len(nums1) > len(nums2):
             nums1, nums2 = nums2, nums1
         m, n = len(nums1), len(nums2)
